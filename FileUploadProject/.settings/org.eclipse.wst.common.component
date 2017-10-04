@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FileUploadProject">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="cos-multipart.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/bridgeit/jars/cos-multipart.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="FileUploadProject"/>
+        <property name="java-output-path" value="/FileUploadProject/build/classes"/>
+    </wb-module>
+</project-modules>

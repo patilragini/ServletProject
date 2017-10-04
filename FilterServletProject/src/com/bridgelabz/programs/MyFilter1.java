@@ -33,9 +33,8 @@ public class MyFilter1 implements Filter {
 			throws IOException, ServletException {
 		System.out.println("Filter1 executing...");
 		//String ipAddress = request.getRemoteAddr();
-
-		// Log the IP address and current timestamp.
-		//System.out.println("IP " + ipAddress + "\n Time " + new Date(0));
+		// Log the IP address
+		//System.out.println("IP " + ipAddress );
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
 	}
