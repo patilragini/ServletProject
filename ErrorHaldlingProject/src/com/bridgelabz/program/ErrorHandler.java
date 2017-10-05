@@ -1,39 +1,31 @@
-package com.bridgelabz.programs;
+package com.bridgelabz.program;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.oreilly.servlet.MultipartRequest;
-
 /**
- * Servlet implementation class FileUpload
+ * Servlet implementation class ErrorHandler
  */
-@WebServlet(value="/FileUpload")
-public class FileUpload extends HttpServlet {
-	private static final long serialVersionUID = 1L;      
-  
-
-	/**
+@WebServlet("/ErrorHandler")
+public class ErrorHandler extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+  	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			
+		System.out.println("ERROR PAGE in do get!!!");
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");  
-		PrintWriter out = response.getWriter(); 		          
-		MultipartRequest m=new MultipartRequest(request,"/home/bridgeit/Pictures/Wallpapers");  
-		out.print("successfully uploaded!!!");  
+		System.out.println("ERROR PAGE in doPost!!!");
 
 	}
 
