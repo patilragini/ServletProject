@@ -31,8 +31,7 @@ public class MyFilter implements Filter {
 		
 	      System.out.println("do filter!!! by annotations " );  
 	         
-	      // Pass request back down the filter chain 
-	      chain.doFilter(request,response); 
+	       chain.doFilter(request,response); 
 		
 	}
 

@@ -1,6 +1,8 @@
 package com.bridgelabz.programs;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,6 +26,9 @@ public class RedirectPage extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		  
+       /* RequestDispatcher rd=request.getRequestDispatcher("index.html");  
+        rd.include(request,response);*/
 		String site = "https://www.w3schools.com";
 		response.sendRedirect(site);
 		System.out.println("inpost!!!");
