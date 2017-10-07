@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ErrorHandler
  */
-@WebServlet("/ErrorHandler")
+//@WebServlet("/ErrorHandler")
 public class ErrorHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
