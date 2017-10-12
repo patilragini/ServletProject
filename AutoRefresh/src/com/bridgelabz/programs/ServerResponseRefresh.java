@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   1-10-2017
+ *@purpose aoto refresh header  using annotation
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.io.IOException;
@@ -16,7 +22,7 @@ public class ServerResponseRefresh extends HttpServlet {
    // Method to handle GET method request.
    public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-	   System.out.println("in do****************get");
+	   //System.out.println("in do****************get");
    
       // Set refresh, autoload time as 1 seconds
       response.setIntHeader("Refresh", 1);
@@ -47,7 +53,7 @@ public class ServerResponseRefresh extends HttpServlet {
       out.println(docType +
          "<html>\n" +
          "<head><title>" + title + "</title></head>\n"+
-         "<body bgcolor = \"blue\">\n" +
+         "<body bgcolor = \"lavender\">\n" +
          "<h1 align = \"center\">" + title + "</h1>\n" +
          "<p>Current Time is: " + CT + "</p>\n"
       );

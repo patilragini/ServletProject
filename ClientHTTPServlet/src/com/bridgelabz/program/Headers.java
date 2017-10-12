@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   2-10-2017
+ *@purpose accept data from user and display url
+ ******************************************************************************/
 package com.bridgelabz.program;
 
 import javax.servlet.*;

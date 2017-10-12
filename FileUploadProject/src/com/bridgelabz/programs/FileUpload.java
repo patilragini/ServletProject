@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   3-10-2017
+ *@purpose this servlet is taking file and storing in databse
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.io.IOException;
@@ -32,8 +38,8 @@ public class FileUpload extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
 		PrintWriter out = response.getWriter(); 		          
-		MultipartRequest m=new MultipartRequest(request,"/home/bridgeit/Pictures/Wallpapers");  
-		out.print("successfully uploaded!!!");  
+		MultipartRequest multiPart=new MultipartRequest(request,"/home/bridgeit/Pictures/Wallpapers");  
+		out.print("successfully uploaded!!!"+multiPart);  
 
 	}
 

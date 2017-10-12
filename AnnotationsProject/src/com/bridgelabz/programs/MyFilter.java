@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   1-10-2017
+ *@purpose simple my filter program
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.io.IOException;

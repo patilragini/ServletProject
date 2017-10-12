@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   4-10-2017
+ *@purpose  give session details
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.io.IOException;

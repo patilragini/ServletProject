@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   3-10-2017
+ *@purpose ErrorHandler is responsible to handle error when location is not found
+ ******************************************************************************/
 package com.bridgelabz.program;
 
 import java.io.IOException;

@@ -1,0 +1,24 @@
+package com.bridgelabz.programs;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Debug {
+	final static Logger logger = LoggerFactory.getLogger(Debug.class);
+	static Integer t;
+	static Integer oldT;
+
+	public static void main(String args[]) {
+System.out.println("in temperature");
+		int temperature = 50;
+		oldT = t;
+		t = temperature;
+
+		logger.debug("Temperature set to {}. Old temperature was {}.", t, oldT);
+
+		if (temperature > 50) {
+			logger.info("Temperature has risen above 50 degrees.");
+		}
+
+	}
+}

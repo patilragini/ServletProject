@@ -1,5 +1,10 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   1-10-2017
+ *@purpose logout and expire cookie
+ ******************************************************************************/
 package com.bridgelabz.programs;
-
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,30 +17,32 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.tomcat.util.http.parser.Cookie;
 
-@WebServlet(value ="/logout")
+@WebServlet(value = "/logout")
 public class logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-   
+
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("in get logout!!!");
-		javax.servlet.http.Cookie[] ck = request.getCookies();
-		ck[0].setMaxAge(1);  
-		PrintWriter out = response.getWriter();	
-		response.addCookie(ck[0]);
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// System.out.println("in get logout!!!");
+		javax.servlet.http.Cookie[] cookie = request.getCookies();
+		//set age then expire after 1 sec
+		cookie[0].setMaxAge(1);
+		PrintWriter out = response.getWriter();
+		response.addCookie(cookie[0]);
 		out.print("you are successfully logged out!");
-		
-        System.out.println("you are successfully logged out!");  ;
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-System.out.println("inpost logout");		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("inpost logout");
 	}
 
 }

@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   1-10-2017
+ *@purpose  accept name from user put in cookie and display on view cookie  
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.io.IOException;
@@ -38,12 +44,12 @@ public class Servlet1 extends HttpServlet {
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
 
-			String n = request.getParameter("userName");
-			out.print("Welcome " + n);
+			String name = request.getParameter("userName");
+			out.print("Welcome " + name);
 
-			Cookie ck = new Cookie("uname", n);// creating cookie object
-			System.out.println("servelet1 " + ck.getValue());
-			response.addCookie(ck);// adding cookie in the response
+			Cookie cookie = new Cookie("uname", name);// creating cookie object
+			System.out.println("servelet1 " + cookie.getValue());
+			response.addCookie(cookie);// adding cookie in the response
 
 			// creating submit button
 			// out.print("<form action="+"Servlet2"+"method="+"post"+">");
@@ -56,7 +62,7 @@ public class Servlet1 extends HttpServlet {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		System.out.println("out servlet1 !!!");
+		// System.out.println("out servlet1 !!!");
 	}
 
 }
