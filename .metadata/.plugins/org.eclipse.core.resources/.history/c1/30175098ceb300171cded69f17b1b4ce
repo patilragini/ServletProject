@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.bridgelabz.SimpleMaven.StoreData" table="mavenTable">  
+   
+    <id name="aotoId" column="id" type="text" >  
+     <generator class="native"></generator>  
+    </id>  
+     <one-to-one name="mavenTable" class="com.bridgelabz.SimpleMaven.StoreData"/>   
+    <property name="firstName" column="fname" type="text"></property>  
+    <property name="lastName" column="lname" type="text"></property>  
+            
+  </class>  
+            
+ </hibernate-mapping>  

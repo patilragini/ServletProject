@@ -1,0 +1,19 @@
+package com.bridgelabz.program;
+
+import java.util.regex.Pattern;
+
+public class regex {
+
+	public static void main(String args[]) {
+		String regexName="[a-zA-Z0-9\\s]{4,}";
+		String regexPhoneNumber = "[0-9]";
+		String name="ragini patil@";
+		System.out.println(name);
+		if (!Pattern.matches(regexName, name) || name != "") {
+			System.out.println("=="+Pattern.matches(regexName, name));
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="/home/bridgeit/jars/tomcat8/lib/tomcat-websocket.jar" runtime-id="Apache Tomcat v8.0 (2)" source-attachment-path="/tmp/.org.sf.feeling.decompiler1507174983699/source/tomcat-websocket-8.0.36-sources.jar"/>
+  <source-attachment entry="/home/bridgeit/jars/tomcat8/lib/tomcat-util.jar" runtime-id="Apache Tomcat v8.0 (2)" source-attachment-path="/tmp/.org.sf.feeling.decompiler1507005635362/source/tomcat-util-8.0.36-sources.jar"/>
+  <source-attachment entry="/home/bridgeit/jars/tomcat8/lib/catalina.jar" runtime-id="Apache Tomcat v8.0 (2)" source-attachment-path="/tmp/.org.sf.feeling.decompiler1507348967123/source/tomcat-catalina-8.0.36-sources-1507369803584.jar"/>
+  <source-attachment entry="/home/bridgeit/jars/tomcat8/lib/servlet-api.jar" runtime-id="Apache Tomcat v8.0 (2)" source-attachment-path="/tmp/.org.sf.feeling.decompiler1507779029758/source/tomcat-servlet-api-8.0.36-sources-1507795232997.jar"/>
+</classpath>

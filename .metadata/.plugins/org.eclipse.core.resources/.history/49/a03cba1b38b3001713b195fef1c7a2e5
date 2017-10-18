@@ -1,0 +1,5 @@
+package com.bridgelabz.maven2.HibernateExample;
+
+public class Stock {
+
+}
